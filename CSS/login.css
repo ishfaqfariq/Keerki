@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif, Helvetica Neue;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.header-div {
+  width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .5rem 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0278ae;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  /* Show the dropdown menu on hover */
+}
+
+header .navbar-div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .ul-div {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3rem;
+}
+
+header button {
+  width: 135px;
+  background-color: transparent;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+header ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header li {
+  margin-bottom: 1rem;
+  padding-left: 3rem;
+}
+
+header .dropdown-content {
+  /* Dropdown content (hidden by default) */
+  display: none;
+  position: absolute;
+  top: 19px;
+  left: 75px;
+  margin-top: 2px;
+  padding: 8px 0px;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+header .dropdown-content a {
+  float: none;
+  color: black;
+  background-color: #f9f9f9;
+  padding: 4px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+header .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 3rem;
+  border-radius: 15px;
+}
+
+header .dropdown img {
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+header .dropdown span {
+  background-color: unset;
+}
+
+header .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+button#lang-btn {
+  color: white;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+div.logo-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+div.logo-div img {
+  width: 200px;
+  vertical-align: middle;
+}
+
+.full-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(2, 120, 174, 0.9)), to(rgba(2, 120, 174, 0.9))), url(../Resources/login.3f383b31.jpeg);
+  background: linear-gradient(0deg, rgba(2, 120, 174, 0.9), rgba(2, 120, 174, 0.9)), url(../Resources/login.3f383b31.jpeg);
+}
+
+.full-screen .left-half-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+  height: 100vh;
+}
+
+.full-screen .left-half-div img {
+  width: 304px;
+  height: 131px;
+  opacity: 0.7;
+}
+
+.full-screen .right-half-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55%;
+  margin-top: 3rem;
+  background-color: #fff;
+}
+
+.full-screen .right-half-div .back-btn-div {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 3rem;
+  padding-top: 3rem;
+}
+
+.full-screen .right-half-div .back-btn-div p {
+  margin-left: 16px;
+}
+
+.full-screen .right-half-div .back-btn-div button {
+  color: #06a6f0;
+}
+
+.full-screen .right-half-div .back-btn-div button:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.full-screen .right-half-div button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.full-screen .right-half-div .forum-div {
+  width: 70%;
+  padding: 4rem 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-screen .right-half-div .forum-div img {
+  width: 158px;
+  height: 80px;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 {
+  width: 84%;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 .mar-lft {
+  margin-left: 7px;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 .mar-lft h1.form-intro1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: .5rem;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 .mar-lft p.form-intro2 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 .mar-lft .h-line {
+  border: 1px solid #f5f5f5;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form {
+  font-size: 100%;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form input {
+  width: 100%;
+  height: 64px;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form input:focus {
+  outline: none;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form input:hover {
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form .form-group {
+  margin-bottom: 1rem;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form .form-group input {
+  padding: 0 1rem;
+  border-radius: .3rem;
+  border: 1px solid #dee2e6;
+  margin-left: 7px;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form button.forget {
+  background-color: inherit;
+  border: none;
+  color: #0278ae;
+  cursor: pointer;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form button.forget:hover {
+  color: black;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form button.login-Btn {
+  background-color: #0278ae;
+  color: #fff;
+  font-weight: 400;
+  border-radius: .3rem;
+  padding: 1rem;
+  width: 100%;
+  margin: 4rem 0 3rem 7px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form button.login-Btn:hover {
+  background-color: #055b83;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form div.or-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: lighter;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-left: 14px;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form div.or-div::before {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 1px solid #bababa;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form div.or-div::after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 1px solid #bababa;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form button.fb-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 64px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  margin-left: 7px;
+  padding: .375rem .75rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: transparent;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form button.fb-btn:hover {
+  border: 1px solid #06a6f0;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form button.fb-btn div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form button.fb-btn span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form .btn-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 64px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  margin-left: 7px;
+  padding: .375rem .75rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: transparent;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form .btn-2:hover {
+  border: 1px solid #06a6f0;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form .btn-2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form .btn-2 span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form .btn-3 {
+  width: 100%;
+  height: 64px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  margin-left: 7px;
+  margin-bottom: 3rem;
+  padding: .375rem .75rem;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: transparent;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-screen .right-half-div .forum-div .widht-84 form .btn-3:hover {
+  border: 1px solid #06a6f0;
+}
+/*# sourceMappingURL=login.css.map */
